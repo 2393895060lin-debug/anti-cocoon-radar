@@ -1,0 +1,31 @@
+# Runtime output and local history
+Logs/
+logs/
+memory.md
+*.log
+
+# Local configuration and automation metadata
+config/*.local.*
+automation.toml
+.codex/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+
+# Generated and editor state
+.cache/
+cache/
+tmp/
+temp/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
