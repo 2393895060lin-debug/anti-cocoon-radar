@@ -1,0 +1,33 @@
+# Copy this file to radar_config.local.yaml and keep the local file untracked.
+
+user_display_name: "<USER_DISPLAY_NAME>"
+timezone: "<IANA_TIMEZONE>"
+
+paths:
+  workspace_root: "<WORKSPACE_ROOT>"
+  radar_root: "<RADAR_ROOT>"
+  logs_dir: "<LOGS_DIRECTORY>"
+  engineering_log_guide: "<OPTIONAL_ENGINEERING_LOG_GUIDE>"
+
+# Keep topics in the local config if they reveal private interests or projects.
+topics:
+  - "<TOPIC_1>"
+  - "<TOPIC_2>"
+
+report:
+  max_items: 5
+  no_change_text: "今日已完成核查，无高价值变化"
+  filename_pattern: "Daily_Radar_Log_vNNN_YYMMDD.md"
+  recent_logs_to_read: 7
+
+notifications:
+  enabled: false
+  channel: "<NOTIFICATION_CHANNEL>"
+  recipient: "<RECIPIENT>"
+  subject_template: "反信息茧房资讯雷达｜YYYY-MM-DD"
+
+# Optional signals that should be checked first, without bypassing verification.
+priority_signals:
+  - source: "<SOURCE_OR_AUTHOR>"
+    event_pattern: "<EVENT_DESCRIPTION>"
+    place_first_if_verified: true
